@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animist</title>
+     <link rel="icon" type="image/png" href="https://i.ibb.co/mVyJ6n2V/Gold-Motion-AI-Upscale-1795152700538.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <style>
+      *{
+        margin:0;
+      }
+      body{
+        margin:0px;
+        background: linear-gradient(#e1dcf9, white);
+        min-height:100vh;
+        
+      }
+      .div1{
+        margin-left:18px;
+        margin-top:15px;
+        
+      }
+      .p1{
+        display:inline;
+        font-family:quicksand;
+        font-weight:600;
+        color:#4d226e;
+        font-size:large;
+      }
+      .a1{
+        display:inline;
+        text-decoration:none;
+        font-family:cursive;
+        color:#663297;
+        margin-left: 70px;
+        border:1.3px solid #663297;
+        padding:4px;
+        border-radius:20px;
+      }
+      .a2{
+        display:inline;
+        text-decoration:none;
+        font-family:cursive;
+        color:#663297;
+        margin-left: 20px;
+        border:1.3px solid #663297;
+        padding:4px;
+        border-radius:20px;
+      }
+      .a3{
+        display:inline;
+        text-decoration:none;
+        font-family:cursive;
+        color:#663297;
+        margin-left: 20px; 
+        border:1.3px solid #663297;
+        padding:4px;
+        border-radius:20px;
+      }
+      header{
+        border-bottom:1px solid #663297;
+        padding-bottom:15px;
+        
+      }
+      .div3{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        height:200px;
+        border-radius:15px;
+      
+      }
+      .japan {
+    position: relative; 
+    overflow: hidden;  
+    width: 370px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px #000000;
+    z-index: 1;
+}
+
+.japan::before {
+    content: "";
+    position: absolute;
+    inset: 0; 
+    background-image: url("https://i.ibb.co/zV04n40S/IMG-20261120-121620.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*filter: blur(2px); */
+    opacity: 0.7;
+    z-index: -1;
+}
+      .h1{
+        color:#000000;
+        font-family: poppins;
+        margin:40px;
+        text-align: center;
+        /*text-shadow: 0.5px 0.2px 1px hwb(0 100% 0%);*/
+        
+      }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 20px 10px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: 24px 12px;
+      min-height: 155px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(102, 50, 151, 0.12);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'quicksand', sans-serif;
+    }
+
+    .card h3 {
+      color: #3a1853;
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+    }
+
+    .card p {
+      color: #5a4a6e;
+      font-size: 0.78rem;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: #4d226e;
+      background-color: #f3ecff;
+      border: 1.3px solid #663297;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #663297;
+      color: #ffffff;
+    }
+    .footer {
+      margin: 28px 10px 16px;
+      padding: 20px 16px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.55);
+      border-radius: 20px;
+      font-family: 'quicksand', sans-serif;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #4d226e;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-copy {
+      margin: 0;
+      font-size: 0.78rem;
+      color: #5a4a6e;
+    }
+    .about-card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: 22px 18px;
+      margin: 20px 10px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(102, 50, 151, 0.12);
+      font-family: 'quicksand', sans-serif;
+    }
+
+    .about-card h2 {
+      color: #3a1853;
+      font-size: 1.25rem;
+      margin: 0 0 10px;
+    }
+
+    .about-card p {
+      color: #5a4a6e;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+      </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="div1">
+        <p class="p1">♡ANIMIST
+          </p>
+          <a class="a1" href=#home>Home</a>
+          <a class="a2" href=#link>Links</a>
+          <a class="a3" href=#about>About</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="japan" id="home">
+        <div class="div3">
+        <h2 class="h1">Welcome to Animist: Your Portal to Anime World</h2>
+        </div>
+      </div>
+          <div class="grid">
+            
+      <div class="card">
+        <h3 id="link">HiAnime ⭐</h3>
+        <p><p>Free Sub &amp; Dub Streaming</p>
+        <a href="https://hianimes.se/" class="btn">Visit HiAnime</a>
+      </div>
+
+      <div class="card">
+        <h3>Zoro Tv 🍓</h3>
+        <p>Classic &amp; New Releases</p>
+        <a href="https://zorotv.com.in/" class="btn">Visit Zoro Tv</a>
+      </div>
+
+      <div class="card">
+        <h3>Anilab ⚡</h3>
+        <p>Watch &amp; Download on Mobile</p>
+        <a href="https://www.anilab.org/" class="btn">Visit Anilab</a>
+      </div>
+
+      <div class="card">
+        <h3>Anime Salt 🦋</h3>
+        <p>Hindi, Tamil &amp; Telugu Dubs</p>
+        <a href="https://animesalt.cx/" class="btn">Visit Anime Salt</a>
+      </div>
+    </div>
+
+    </main>
+        <section id="about" class="about-card">
+      <h2>About Animist</h2>
+      <p>
+        Animist is a link directory designed to help anime fans quickly discover and access online streaming sites without hunting across multiple bookmarks. Because all listed destinations are external third-party sites, their content, uptime, and interface behavior are managed by their respective operators.
+      </p>
+    </section>
+
+        <footer class="footer">
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#links">Links</a>
+        <a href="#about">About</a>
+      </div>
+      <p class="footer-copy">© 2026 Animist Directory. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
